@@ -1,0 +1,174 @@
+body{
+    background-image: url('./images/background-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+}
+
+ul{
+    /* ul needs to be the size of the icon, so the li's will be centered inside of the ul */
+    height: 80px;
+    width: 80px;
+    padding: 0;
+    position: relative;
+}
+
+li{
+    position: absolute;
+}
+
+.icon{
+    height: 80px;
+    width: 80px;
+}
+
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* icon animations */
+/* icon movement based off of evenly spaced 32 degree segements of the 300px diameter profile picture, which allows room for a total of 10 evenly spaced 80px diameter icons*/
+/* math took into acount the 150px radius of the profile img, and the 40px radius of the icon, and allowing for 10px of padding between the icons and the img */
+
+.codepen-icon{
+    animation-name: codepen;
+    animation-duration: 3s;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    opacity: 0;
+    transform: rotate(-20deg);
+    animation-fill-mode: forwards; 
+    /* makes animation stay after completion  */
+}
+
+@keyframes codepen{
+    0%   {opacity: 0.0; right:0px; bottom:0px;}
+    100% {transform: rotate(0deg); opacity: 1; right:61.8px; bottom:190.2px;}
+
+}
+
+.facebook-icon{
+    animation-name: facebook;
+    animation-duration: 3s;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    opacity: 0;
+    transform: rotate(20deg);
+    animation-fill-mode: forwards;
+}
+
+@keyframes facebook{
+    0%   {opacity: 0.0; left:0px; bottom:0px;}
+    100% {transform: rotate(0deg); opacity: 1; left:61.8px; bottom:190.2px;}
+}
+
+.google-icon{
+    animation-name: google;
+    animation-duration: 3s;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    opacity: 0;
+    transform: rotate(30deg);
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes google{
+    0%   {opacity: 0.0; left:0px; bottom:0px;}
+    100% {transform: rotate(0deg); opacity: 1; left:161.8px; bottom:117.6px;}
+}
+
+.twitter-icon{
+    animation-name: twitter;
+    animation-duration: 3s;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    opacity: 0;
+    transform: rotate(90deg);
+    animation-fill-mode: forwards;
+}
+
+@keyframes twitter{
+    0%   {opacity: 0.0; left:0px; top:0px;}
+    100% {transform: rotate(0deg); opacity: 1; left:200px; top:0px;}
+}
+
+.dribble-icon{
+    animation-name: dribble;
+    animation-duration: 3s;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    opacity: 0;
+    transform: rotate(120deg);
+    animation-fill-mode: forwards;
+}
+
+@keyframes dribble{
+    0%   {opacity: 0.0; left:0px; top:0px;}
+    100% {transform: rotate(0deg); opacity: 1; left:161.8px; top:117.6px;}
+}
+
+.linkedin-icon{
+    animation-name: linkedin;
+    animation-duration: 3s;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    opacity: 0;
+    transform: rotate(175deg);
+    animation-fill-mode: forwards;
+}
+
+@keyframes linkedin{
+    0%   {opacity: 0.0; left:0px; top:0px;}
+    100% {transform: rotate(0deg); opacity: 1; left:61.8px; top:190.2px;}
+}
+
+.github-icon{
+    animation-name: github;
+    animation-duration: 3s;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    opacity: 0;
+    transform: rotate(195deg);
+    animation-fill-mode: forwards;
+}
+
+@keyframes github{
+    0%   {opacity: 0.0; right:0px; top:0px;}
+    100% {transform: rotate(0deg); opacity: 1; right:61.8px; top:190.2px;}
+}
+
+.behance-icon{
+    animation-name: behance;
+    animation-duration: 3s;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    opacity: 0;
+    transform: rotate(210deg);
+    animation-fill-mode: forwards;
+}
+
+@keyframes behance{
+    0%   {opacity: 0.0; right:0px; top:0px;}
+    100% {transform: rotate(0deg); opacity: 1; right:161px; top:117.6px;}
+}
