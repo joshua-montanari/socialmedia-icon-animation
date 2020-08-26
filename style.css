@@ -47,7 +47,7 @@ img{
 }
 
 /* icon animations */
-/* icon movement based off of evenly spaced 32 degree segements of the 300px diameter profile picture, which allows room for a total of 10 evenly spaced 80px diameter icons*/
+/* icon movement based off of evenly spaced 36 degree segements of the 300px diameter profile picture, which allows room for a total of 10 evenly spaced 80px diameter icons*/
 /* math took into acount the 150px radius of the profile img, and the 40px radius of the icon, and allowing for 10px of padding between the icons and the img */
 
 .codepen-icon{
